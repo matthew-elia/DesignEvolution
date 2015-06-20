@@ -8,26 +8,22 @@
 body {
     width: 100%;
     height: 100%;
-    background: #6A88E1;
 }
 
 html {
     width: 100%;
     height: 100%;
 }
- @font-face {
-    font-family: testingfont;
-    src: url(../fonts/test.otf);
-}
-@font-face {
-    font-family: Aldine;
-    src: url(../fonts/Aldine.ttf);
-}
-@font-face {
-    font-family: About;
-    src: url(../fonts/about.ttf);
 
+@font-face {
+    font-family: AvenirHeavy;
+    src: url(../fonts/AvenirLTStd-Heavy.otf);
 }
+@font-face {
+    font-family: AvenirRoman;
+    src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 19px 0;
@@ -39,11 +35,6 @@ html {
 
     .top-nav-collapse {
         padding: 4px;
-    }
-    
-    }
-    .navbar-brand {
-        padding-top: 0px;
     }
 }
  
@@ -62,8 +53,6 @@ of those sections to manage the look and feel of the site. */
     height: 300px;
     padding-top: 50px;
     text-align: center;
-    background: #6A88E1;
-    font-family: About;
     font-size: 2em; 
 }
 
@@ -71,13 +60,10 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 0px;
     text-align: center;
-    background: #6A88E1;
 }
 
 .contact-section {
     height: 100%;
     padding-top: 0px;
     text-align: center;
-    background: #6A88E1;
-    font-family: Aldine;
 }

@@ -12,12 +12,10 @@
 
 body {
     padding-top: 60px;
-    background: #222;
+    background: white;
     color: #fff;
 }
-h1 {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
-}
+
 a {
     color: orange;
 }
