@@ -683,12 +683,6 @@
 
     });
 
-    $('#myTabs a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-        console.log('tab clicked');
-    });
-
     $('#myTabs a').click(function () {
        $('#gallery-title').html('<p>' + $('ul#myTabs > .active > a').text() + '</p>');
     });
