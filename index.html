@@ -39,6 +39,7 @@
 
     body {
         font-family: AvenirRoman;
+        overflow-x: hidden;
     }
 
     h1 {
@@ -56,7 +57,13 @@
 
     a.navbar-brand.page-scroll {
         font-size: 42px;
-        color:#FD8D85;
+        color:#ED484D;
+        position: relative;
+        bottom: 12px;
+    }
+
+    .shrinktext {
+        font-size: 34px !important;
     }
 
     .navbar-default .navbar-nav>li>a:focus {
@@ -68,49 +75,59 @@
     }
     .navbar-default .navbar-nav>li>a:hover {
         color: white;
-        background-color: #EA5652;
+        background-color: #ED484D;
     }
     .navbar-default .navbar-nav>.active>a, 
     .navbar-default .navbar-nav>.active>a:hover, 
     .navbar-default .navbar-nav>.active>a:focus 
     {
-        color: #EA5652;
+        color: #ED484D;
         background-color: white;
     }
 
     #gallery-title > h1 {
         margin:0;
-        color:#FD8D85;
-        text-shadow: 2px 2px black;
-        font-size: 92px;
+        margin-top:16px;
+        color: #ED484D;
+        font-size: 64px;
         position: relative;
-        top: 48px;   
+        top: 2px;   
     }
-    hr {border-top: 5px solid white;}
+    hr {
+        border-top: 3px solid #1E1936;
+        margin-top: 6px;
+        margin-bottom: 12px;
+        width: 60%;
+    }
 
     ul#myTabs {
         font-size: 18px;
         padding:8px 0px;
-        padding-left: 15px;
         position: relative;
-        left: 110px;
+        left:134px;
     }
     .nav-tabs {
         border-bottom: none;
     }
     .tab-content {
         position: relative;
-        top:20px;
+        top:30px;
     }
 
 /*NAV PILLS*/
     .nav-pills>li.active>a, .nav-pills>li>a:hover, .nav-pills>li.active>a:focus {
-      color: #fff;
-      background-color: #1E1936;
+      color:#ED484D;
+      background-color: papayawhip;
+      border-bottom: 2px solid #1E1936;
+      border-radius:0;
+      font-weight: bold;
     }
     .nav-pills>li>a {
-        font-size: 18px;
+        font-size: 21px;
         color: #1E1936;
+        margin:0px 10px;
+        padding: 0 12px;
+        padding-top:12px;
     }
 
     footer {
@@ -129,7 +146,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -137,7 +154,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"> Design Evolution</a>
+                <a class="navbar-brand page-scroll" href="#page-top"> <i class="fa fa-home"></i> Design Evolution</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -213,13 +230,13 @@
 <section id="gallery" style="text-align:center">
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div id="gallery-title"></div>
-            <hr>
+        <div class="col-md-12">   
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div id="gallery-title"></div>
+                <hr>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">   
           <!-- Nav tabs -->
           <ul id="myTabs" class="nav nav-pills" role="tablist">
             <li role="presentation" class="active"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
@@ -230,16 +247,14 @@
             <li role="presentation"><a href="#Foyers" aria-controls="Foyers" role="tab" data-toggle="tab">Foyers</a></li>
           </ul>
         </div>
-        
     </div>
-    </div>
+</div>
 
   <!-- Tab panes -->
 <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="Kitchens">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                     <a class="thumbnail" href="images/kitchens/Kitchen.jpg" data-gallery>
                         <img class="img-responsive" src="images/kitchens/Kitchen.jpg" alt="">
