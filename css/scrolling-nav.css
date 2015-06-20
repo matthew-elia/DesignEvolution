@@ -55,11 +55,11 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     font-size: 2em; 
     color:black;
-    background-color: #CDDFE9;
+    background-color: white;
 }
 
 section#gallery {
-    background-color: white;
+    background-color: #7DE2F9;
     padding: 20px;
 }
 
@@ -74,10 +74,10 @@ section#gallery {
     padding-top: 80px;
     text-align: center;
     color: black;
-    background-color: #EA5652;
+    background-color: white;
 }
 
 footer {
-    background-color: #EA5652;
+    background-color: white;
     margin:0;
 }
