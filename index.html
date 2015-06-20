@@ -50,6 +50,16 @@
         font-size: 36px;
         color:black;
     }
+
+    #gallery-title > h1 {
+        margin:0;
+    }
+
+    .tab-content {
+        position: relative;
+        top:20px;
+    }
+
     </style>
 
 </head>
@@ -159,17 +169,16 @@
 <div class="col-md-12">
   <span>
       <!-- Nav tabs -->
-      <ul id="gallery" class="nav nav-tabs" role="tablist">
+      <ul id="myTabs" class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
         <li role="presentation"><a href="#Bathrooms" aria-controls="Bathrooms" role="tab" data-toggle="tab">Bathrooms</a></li>
         <li role="presentation"><a href="#LivingSpaces" aria-controls="LivingSpaces" role="tab" data-toggle="tab">Living Spaces</a></li>
         <li role="presentation"><a href="#Bedrooms" aria-controls="Bedrooms" role="tab" data-toggle="tab">Bedrooms</a></li>
         <li role="presentation"><a href="#RecreationalRooms" aria-controls="RecreationalRooms" role="tab" data-toggle="tab">Recreational Rooms</a></li> 
         <li role="presentation"><a href="#Foyers" aria-controls="Foyers" role="tab" data-toggle="tab">Foyers</a></li>
+          <div id="gallery-title" class="pull-right">
+          </div>
       </ul>
-      <div class="pull-right">
-          <h1 id="gallery-title"></h1>
-      </div>
   </span>
 </div>
 
@@ -672,18 +681,18 @@
         $('#blueimp-gallery').data('useBootstrapModal', !borderless);
         $('#blueimp-gallery').toggleClass('blueimp-gallery-controls', borderless);
 
-        $('#gallery-title').html('<p>' + $('.active>a').text() + '</p>');
+        $('#gallery-title').html('<h1>' + $('ul#myTabs>li.active>a').text() + '</h1>');
 
-    });
-
-    $('#myTabs a').click(function () {
-       $('#gallery-title').html('<p>' + $('.active>a').text() + '</p>');
     });
 
     $('#myTabs a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
         console.log('tab clicked');
+    });
+
+    $('#myTabs a').click(function () {
+       $('#gallery-title').html('<h1>' + $('ul#myTabs>li.active>a').text() + '</h1>');
     });
 
     </script>
