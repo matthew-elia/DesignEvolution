@@ -38,7 +38,6 @@
     <style>
 
     body {
-        color:black;
         font-family: AvenirRoman;
     }
 
@@ -46,21 +45,80 @@
         font-family: AvenirHeavy;
     }
 
-    a.navbar-brand {
-        font-size: 36px;
-        color:black;
+    a {
+        color:white;
+    }
+
+    .navbar {
+        background-color: #1E1936;
+        border:2px solid #1E1936;
+    }
+
+    a.navbar-brand.page-scroll {
+        font-size: 42px;
+        color:#FD8D85;
+    }
+
+    .navbar-default .navbar-nav>li>a:focus {
+        color:white;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        color:white;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        color: white;
+        background-color: #EA5652;
+    }
+    .navbar-default .navbar-nav>.active>a, 
+    .navbar-default .navbar-nav>.active>a:hover, 
+    .navbar-default .navbar-nav>.active>a:focus 
+    {
+        color: #EA5652;
+        background-color: white;
     }
 
     #gallery-title > h1 {
         margin:0;
+        color:#1E1936;
+        font-size: 72px;
+        position: relative;
+        top: 43px;   
     }
+    hr {border-top: 2px solid #EA5652;}
 
+    ul#myTabs {
+        font-size: 18px;
+        padding:8px 0px;
+        padding-left: 15px;
+        position: relative;
+        left: 110px;
+    }
+    .nav-tabs {
+        border-bottom: none;
+    }
     .tab-content {
         position: relative;
         top:20px;
     }
 
+/*NAV PILLS*/
+    .nav-pills>li.active>a, .nav-pills>li>a:hover, .nav-pills>li.active>a:focus {
+      color: #fff;
+      background-color: #1E1936;
+    }
+    .nav-pills>li>a {
+        font-size: 18px;
+        color: #1E1936;
+    }
+
+    footer {
+        color:black;
+        text-align: center;
+    }
+
     </style>
+
 
 </head>
 
@@ -118,23 +176,14 @@
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('/images/rsz_hamlet_house_101.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Functional Living Room</h2>
-                </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('/images/rsz_img_0774.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Library</h2>
-                </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('/images/Chesterpark_kitchen.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Kitchen</h2>
-                </div>
             </div>
         </div>
 
@@ -147,10 +196,6 @@
         </a>
 
     </header>
-
-    <!-- Page Content -->
-    <div class="container">
-
      
     <!-- About Section -->
     <section id="about" class="about-section">
@@ -164,23 +209,29 @@
         </div>
     </section>
 
-
-<div class="row">
-<div class="col-md-12">
-  <span>
-      <!-- Nav tabs -->
-      <ul id="myTabs" class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
-        <li role="presentation"><a href="#Bathrooms" aria-controls="Bathrooms" role="tab" data-toggle="tab">Bathrooms</a></li>
-        <li role="presentation"><a href="#LivingSpaces" aria-controls="LivingSpaces" role="tab" data-toggle="tab">Living Spaces</a></li>
-        <li role="presentation"><a href="#Bedrooms" aria-controls="Bedrooms" role="tab" data-toggle="tab">Bedrooms</a></li>
-        <li role="presentation"><a href="#RecreationalRooms" aria-controls="RecreationalRooms" role="tab" data-toggle="tab">Recreational Rooms</a></li> 
-        <li role="presentation"><a href="#Foyers" aria-controls="Foyers" role="tab" data-toggle="tab">Foyers</a></li>
-          <div id="gallery-title" class="pull-right">
-          </div>
-      </ul>
-  </span>
-</div>
+<section id="gallery" style="text-align:center">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div id="gallery-title"></div>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">   
+          <!-- Nav tabs -->
+          <ul id="myTabs" class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
+            <li role="presentation"><a href="#Bathrooms" aria-controls="Bathrooms" role="tab" data-toggle="tab">Bathrooms</a></li>
+            <li role="presentation"><a href="#LivingSpaces" aria-controls="LivingSpaces" role="tab" data-toggle="tab">Living Spaces</a></li>
+            <li role="presentation"><a href="#Bedrooms" aria-controls="Bedrooms" role="tab" data-toggle="tab">Bedrooms</a></li>
+            <li role="presentation"><a href="#RecreationalRooms" aria-controls="RecreationalRooms" role="tab" data-toggle="tab">Recreational Rooms</a></li> 
+            <li role="presentation"><a href="#Foyers" aria-controls="Foyers" role="tab" data-toggle="tab">Foyers</a></li>
+          </ul>
+        </div>
+        
+    </div>
+    </div>
 
   <!-- Tab panes -->
 <div class="tab-content">
@@ -630,8 +681,9 @@
 
  <!-- Picture Gallery -->
 <!-- <div id="links"> -->
-   
-<!-- </div> -->
+ </div>   
+</div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -650,11 +702,13 @@
 
             <!-- Footer -->
     <footer>
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <p>Copyright &copy; Design Evolution 2015</p>
             </div>
         </div>
+    </div>
     </footer>
 
 </div>
