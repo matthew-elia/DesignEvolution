@@ -135,6 +135,34 @@
         text-align: center;
     }
 
+    @media only screen and (max-width: 772px) {
+        a.navbar-brand.page-scroll {
+          max-width: 250px;
+          font-size: 24px;
+          padding-top: 24px;
+        }
+
+        a.navbar-brand.page-scroll.shrinktext {
+            max-width: 250px;
+          font-size: 24px !important;
+          padding-top: 24px;   
+        }
+
+        #about {
+            font-size: 24px;
+        }
+
+        .about-section {
+            padding-top: 40px;
+        }
+
+        .carousel {
+          height: 80%;
+          position: relative;
+          top: -10px;
+        }
+    } 
+
     </style>
 
 
@@ -181,74 +209,74 @@
     </nav>
 
     <!-- Intro Section -->
-   <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    <header id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/images/rsz_hamlet_house_101.jpg');"></div>
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!-- Set the first background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('/images/rsz_hamlet_house_101.jpg');"></div>
+                </div>
+                <div class="item">
+                    <!-- Set the second background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('/images/rsz_img_0774.jpg');"></div>
+                </div>
+                <div class="item">
+                    <!-- Set the third background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('/images/Chesterpark_kitchen.jpg');"></div>
+                </div>
             </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/images/rsz_img_0774.jpg');"></div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('/images/Chesterpark_kitchen.jpg');"></div>
-            </div>
-        </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
     </header>
      
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12">
                     <h1>About Design Evolution</h1>
-                    <p>Design Evolution was founded by Ellen Veith Elia in 2007. Mrs.Elia Graduated from Parsons schoool of design in 2006</p>
+                    <p>Design Evolution was founded by Ellen Veith Elia in the fall of 2003, shortly after graduating from Parsons School of Design.</p>
                 </div>
             </div>
         </div>
     </section>
 
 <section id="gallery" style="text-align:center">
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">   
+    <div class="container-fluid hidden-xs">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div id="gallery-title"></div>
-                <hr>
+            <div class="col-md-12">   
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div id="gallery-title"></div>
+                    <hr>
+                </div>
+            </div>
+              <!-- Nav tabs -->
+              <ul id="myTabs" class="nav nav-pills" role="tablist">
+                <li role="presentation" class="active"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
+                <li role="presentation"><a href="#Bathrooms" aria-controls="Bathrooms" role="tab" data-toggle="tab">Bathrooms</a></li>
+                <li role="presentation"><a href="#LivingSpaces" aria-controls="LivingSpaces" role="tab" data-toggle="tab">Living Spaces</a></li>
+                <li role="presentation"><a href="#Bedrooms" aria-controls="Bedrooms" role="tab" data-toggle="tab">Bedrooms</a></li>
+                <li role="presentation"><a href="#RecreationalRooms" aria-controls="RecreationalRooms" role="tab" data-toggle="tab">Recreational Rooms</a></li> 
+                <li role="presentation"><a href="#Foyers" aria-controls="Foyers" role="tab" data-toggle="tab">Foyers</a></li>
+              </ul>
             </div>
         </div>
-          <!-- Nav tabs -->
-          <ul id="myTabs" class="nav nav-pills" role="tablist">
-            <li role="presentation" class="active"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
-            <li role="presentation"><a href="#Bathrooms" aria-controls="Bathrooms" role="tab" data-toggle="tab">Bathrooms</a></li>
-            <li role="presentation"><a href="#LivingSpaces" aria-controls="LivingSpaces" role="tab" data-toggle="tab">Living Spaces</a></li>
-            <li role="presentation"><a href="#Bedrooms" aria-controls="Bedrooms" role="tab" data-toggle="tab">Bedrooms</a></li>
-            <li role="presentation"><a href="#RecreationalRooms" aria-controls="RecreationalRooms" role="tab" data-toggle="tab">Recreational Rooms</a></li> 
-            <li role="presentation"><a href="#Foyers" aria-controls="Foyers" role="tab" data-toggle="tab">Foyers</a></li>
-          </ul>
-        </div>
     </div>
-</div>
+
 
   <!-- Tab panes -->
 <div class="tab-content">
@@ -256,63 +284,43 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/kitchens/Kitchen.jpg" data-gallery>
-                        <img class="img-responsive" src="images/kitchens/Kitchen.jpg" alt="">
+                    <a class="thumbnail" href="images/Kitchens/Kitchen.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Kitchens/Kitchen.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/kitchens/Kitchen2.jpg" data-gallery>
-                        <img class="img-responsive" src="images/kitchens/Kitchen2.jpg" alt="">
+                    <a class="thumbnail" href="images/Kitchens/Kitchen2.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Kitchens/Kitchen2.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/kitchens/Kitchen3.jpg" data-gallery>
-                        <img class="img-responsive" src="images/kitchens/Kitchen3.jpg" alt="">
+                    <a class="thumbnail" href="images/Kitchens/Kitchen3.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Kitchens/Kitchen3.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/kitchens/Kitchen4.jpg" data-gallery>
-                        <img class="img-responsive" src="images/kitchens/Kitchen4.jpg" alt="">
+                    <a class="thumbnail" href="images/Kitchens/Kitchen4.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Kitchens/Kitchen4.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/kitchens/Kitchen5.jpg" data-gallery>
-                        <img class="img-responsive" src="images/kitchens/Kitchen5.jpg" alt="">
+                    <a class="thumbnail" href="images/Kitchens/Kitchen5.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Kitchens/Kitchen5.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/kitchens/Kitchen6.jpg" data-gallery>
-                        <img class="img-responsive" src="images/kitchens/Kitchen6.jpg" alt="">
+                    <a class="thumbnail" href="images/Kitchens/Kitchen6.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Kitchens/Kitchen6.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/kitchens/Kitchen7.jpg" data-gallery>
-                        <img class="img-responsive" src="images/kitchens/Kitchen7.jpg" alt="">
+                    <a class="thumbnail" href="images/Kitchens/Kitchen7.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Kitchens/Kitchen7.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/kitchens/Kitchen8.jpg" data-gallery>
-                   <img class="img-responsive" src="images/kitchens/Kitchen8.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <a class="thumbnail" href="images/Kitchens/Kitchen8.jpg" data-gallery>
+                   <img class="img-responsive" src="images/Kitchens/Kitchen8.jpg" alt="">
                     </a>
                 </div>
             </div> 
@@ -324,63 +332,43 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bathrooms/bathroom.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bathrooms/bathroom.jpg" alt="">
+                    <a class="thumbnail" href="images/Bathrooms/Bathroom.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bathrooms/Bathroom.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bathrooms/bathroom2.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bathrooms/bathroom2.jpg" alt="">
+                    <a class="thumbnail" href="images/Bathrooms/Bathroom2.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bathrooms/Bathroom2.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bathrooms/bathroom3.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bathrooms/bathroom3.jpg" alt="">
+                    <a class="thumbnail" href="images/Bathrooms/Bathroom3.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bathrooms/Bathroom3.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bathrooms/bathroom4.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bathrooms/bathroom4.jpg" alt="">
+                    <a class="thumbnail" href="images/Bathrooms/Bathroom4.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bathrooms/Bathroom4.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bathrooms/bathroom5.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bathrooms/bathroom5.jpg" alt="">
+                    <a class="thumbnail" href="images/Bathrooms/Bathroom5.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bathrooms/Bathroom5.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bathrooms/bathroom6.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bathrooms/bathroom6.jpg" alt="">
+                    <a class="thumbnail" href="images/Bathrooms/Bathroom6.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bathrooms/Bathroom6.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bathrooms/bathroom7.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bathrooms/bathroom7.jpg" alt="">
+                    <a class="thumbnail" href="images/Bathrooms/Bathroom7.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bathrooms/Bathroom7.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bathrooms/bathroom8.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bathrooms/bathroom8.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bathreooms/bathroom.jpg">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <a class="thumbnail" href="images/Bathrooms/Bathroom8.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bathrooms/Bathroom8.jpg" alt="">
                     </a>
                 </div>
             </div> 
@@ -460,63 +448,33 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bedrooms/bedrooms.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bedrooms/bedrooms.jpg" alt="">
+                    <a class="thumbnail" href="images/Bedrooms/Bedrooms.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bedrooms/Bedrooms.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bedrooms/bedrooms2.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bedrooms/bedrooms2.jpg" alt="">
+                    <a class="thumbnail" href="images/Bedrooms/Bedrooms2.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bedrooms/Bedrooms2.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bedrooms/bedrooms3.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bedrooms/bedrooms3.jpg" alt="">
+                    <a class="thumbnail" href="images/Bedrooms/Bedrooms3.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bedrooms/Bedrooms3.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bedrooms/bedrooms4.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bedrooms/bedrooms4.jpg" alt="">
+                    <a class="thumbnail" href="images/Bedrooms/Bedrooms4.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bedrooms/Bedrooms4.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bedrooms/bedrooms5.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bedrooms/bedrooms5.jpg" alt="">
+                    <a class="thumbnail" href="images/Bedrooms/Bedrooms5.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bedrooms/Bedrooms5.jpg" alt="">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/bedrooms/bedrooms6.jpg" data-gallery>
-                        <img class="img-responsive" src="images/bedrooms/bedrooms6.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <a class="thumbnail" href="images/Bedrooms/Bedrooms6.jpg" data-gallery>
+                        <img class="img-responsive" src="images/Bedrooms/Bedrooms6.jpg" alt="">
                     </a>
                 </div>
             </div> 
@@ -542,51 +500,6 @@
                         <img class="img-responsive" src="images/RecreationalRooms/RecreationalRooms3.jpg" alt="">
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
             </div> 
        </div>
    </div>
@@ -610,55 +523,11 @@
                         <img class="img-responsive" src="images/Foyers/Foyers3.jpg" alt="">
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    </a>
-                </div>
             </div> 
        </div>
    </div> <!-- end FOYERS -->
   </div>
+  </section>
 
     <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
     <div id="blueimp-gallery" class="blueimp-gallery">
