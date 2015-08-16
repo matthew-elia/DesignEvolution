@@ -17,11 +17,11 @@ html {
 
 @font-face {
     font-family: Grotesk;
-    src: url(../fonts/EngraversGothic-BT-Regular.ttf);
+    src: url(../fonts/FrizQuadrata-BT-Roman.ttf);
 }
 @font-face {
     font-family: Grotesk;
-    src: url(../fonts/EngraversGothic-BT-Regular.ttf);
+    src: url(../fonts/FrizQuadrata-BT-Roman.ttf);
 }
 
 @media(min-width:767px) {
