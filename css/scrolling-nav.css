@@ -16,12 +16,12 @@ html {
 }
 
 @font-face {
-    font-family: AvenirHeavy;
-    src: url(../fonts/AvenirLTStd-Heavy.otf);
+    font-family: Grotesk;
+    src: url(../fonts/EngraversGothic-BT-Regular.ttf);
 }
 @font-face {
-    font-family: AvenirRoman;
-    src: url(../fonts/AvenirLTStd-Roman.otf);
+    font-family: Grotesk;
+    src: url(../fonts/EngraversGothic-BT-Regular.ttf);
 }
 
 @media(min-width:767px) {
@@ -61,7 +61,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 section#gallery {
-    background-color: papayawhip;
+    background-color: #FEFAF0;
     padding: 20px;
 }
 
