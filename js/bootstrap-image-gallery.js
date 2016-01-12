@@ -27,9 +27,14 @@
 }(function ($, Gallery) {
     'use strict';
 
+    // var fullscreenOptions = {
+    //     // Defines if the gallery should open in fullscreen mode:
+    //     fullScreen: false
+    // };
     $.extend(Gallery.prototype.options, {
-        useBootstrapModal: true
+        useBootstrapModal: true,
     });
+
 
     var close = Gallery.prototype.close,
         imageFactory = Gallery.prototype.imageFactory,
@@ -81,7 +86,7 @@
         close: function () {
             this.container.find('.modal').removeClass('in');
             close.call(this);
-        }
+        },
 
     });
 
