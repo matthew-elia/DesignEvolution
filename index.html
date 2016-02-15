@@ -35,15 +35,17 @@
     <link rel="stylesheet" href="css/bootstrap-image-gallery.css">
     <link rel="stylesheet" href="css/demo.css">
 
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,500,700' rel='stylesheet' type='text/css'>
+
     <style>
 
     body {
-        font-family: Grotesk;
+        font-family: 'Poppins', sans-serif;
         overflow-x: hidden;
     }
 
     h1 {
-        font-family: Grotesk;
+        font-family: 'Poppins', sans-serif;
     }
 
     a {
@@ -54,15 +56,18 @@
         /*height: 80% !important;
         width: 80% !important;*/
     }
-
+/*blue 486A83
+red F48C75
+tan F2EAD6
+purp A18083*/
     .navbar {
-        background-color: #164874;
-        border:2px solid #164874;
+        background-color: #486A83;
+        border:2px solid #486A83;
     }
 
     a.navbar-brand.page-scroll {
         font-size: 42px;
-        color: darkturquoise;
+        color: white;
         position: relative;
         bottom: 12px;
     }
@@ -79,21 +84,27 @@
         color:white;
     }
     .navbar-default .navbar-nav>li>a:hover {
-        color: white;
-        background-color: darkturquoise;
+        color: #486A83;
+        background-color: #F2EAD6;
     }
-    .navbar-default .navbar-nav>.active>a, 
+    .navbar-default .navbar-nav>.active>a{
+        color: white;
+        background-color: #E05332;
+    } 
     .navbar-default .navbar-nav>.active>a:hover, 
-    .navbar-default .navbar-nav>.active>a:focus 
     {
-        color: darkturquoise;
-        background-color: white;
+        color: #E05332;
+        background-color: #486A83;
+    }
+    .navbar-default .navbar-nav>.active>a:focus {
+        color: white;
+        background-color: #E05332;
     }
 
     #gallery-title > h1 {
         margin:0;
         margin-top:16px;
-        color: darkturquoise;
+        color: #E05332;
         font-size: 64px;
         position: relative;
         top: 2px;   
@@ -117,10 +128,17 @@
         top:30px;
     }
 
+.thumbnail>img {
+    display: block;
+    width: 105% !important;
+    height: 180px !important;
+}
+
+
 /*NAV PILLS*/
     .nav-pills>li.active>a, .nav-pills>li>a:hover, .nav-pills>li.active>a:focus {
-      color: darkturquoise;
-      background-color: #FEFAF0;
+      color: #E05332;
+      background-color: white;
       border-bottom: 2px solid #1E1936;
       border-radius:0;
       font-weight: bold;
@@ -131,11 +149,6 @@
         margin:0px 10px;
         padding: 0 12px;
         padding-top:12px;
-    }
-
-    footer {
-        color:black;
-        text-align: center;
     }
 
     nav-tabs > li, .nav-pills > li {
@@ -151,9 +164,14 @@
 
     @media only screen and (max-width: 772px) {
         a.navbar-brand.page-scroll {
-          max-width: 250px;
           font-size: 24px;
           padding-top: 24px;
+        }
+
+        .thumbnail>img {
+            display: block;
+            width: 100% !important;
+            height: auto !important;
         }
 
         a.navbar-brand.page-scroll.shrinktext {
@@ -196,26 +214,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"> <i class="fa fa-home" style="color:white;"></i> Design Evolution</a>
+                <a class="navbar-brand page-scroll" href="#page-top"> <i class="fa fa-home" style="color:#E05332;"></i> Design Evolution</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <!-- <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#gallery">Gallery</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -229,21 +246,31 @@
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>
 
             <!-- Wrapper for Slides -->
             <div class="carousel-inner">
                 <div class="item active">
                     <!-- Set the first background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('/images/rsz_hamlet_house_101.jpg');"></div>
+                    <div class="fill" style="background-image:url('/images/CarouselCloseups/CS.jpg');"></div>
                 </div>
                 <div class="item">
                     <!-- Set the second background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('/images/rsz_img_0774.jpg');"></div>
+                    <div class="fill" style="background-image:url('/images/CarouselCloseups/CS1.jpg');"></div>
+                </div>
+                <div class="item">
+                    <!-- Set the second background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('/images/CarouselCloseups/CS2.jpg');"></div>
                 </div>
                 <div class="item">
                     <!-- Set the third background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('/images/Chesterpark_kitchen.jpg');"></div>
+                    <div class="fill" style="background-image:url('/images/CarouselCloseups/CS3.jpg');"></div>
+                </div>
+                <div class="item">
+                    <!-- Set the third background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('/images/CarouselCloseups/CS4.jpg');"></div>
                 </div>
             </div>
 
@@ -255,295 +282,298 @@
                 <span class="icon-next"></span>
             </a>
     </header>
-     
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
+
+
+    <section id="gallery" style="text-align:center">
+        <div class="container-fluid hidden-xs">
             <div class="row">
-                <div class="col-xs-12">
-                    <h1>About Design Evolution</h1>
-                    <p>Design Evolution was founded by Ellen Veith Elia in the fall of 2003, shortly after graduating from Parsons School of Design.</p>
+                <div class="col-md-12">   
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div id="gallery-title"></div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                  <!-- Nav tabs -->
+                  <ul id="myTabs" class="nav nav-pills" role="tablist">
+                    <li role="presentation" class="active"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
+                    <li role="presentation"><a href="#Bathrooms" aria-controls="Bathrooms" role="tab" data-toggle="tab">Bathrooms</a></li>
+                    <li role="presentation"><a href="#LivingSpaces" aria-controls="LivingSpaces" role="tab" data-toggle="tab">Living Spaces</a></li>
+                    <li role="presentation"><a href="#Bedrooms" aria-controls="Bedrooms" role="tab" data-toggle="tab">Bedrooms</a></li>
+                    <li role="presentation"><a href="#RecreationalRooms" aria-controls="RecreationalRooms" role="tab" data-toggle="tab">Recreational Rooms</a></li> 
+                    <li role="presentation"><a href="#Foyers" aria-controls="Foyers" role="tab" data-toggle="tab">Foyers</a></li>
+                  </ul>
+                </div>
                 </div>
             </div>
         </div>
-    </section>
 
-<section id="gallery" style="text-align:center">
-    <div class="container-fluid hidden-xs">
-        <div class="row">
-            <div class="col-md-12">   
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div id="gallery-title"></div>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-              <!-- Nav tabs -->
-              <ul id="myTabs" class="nav nav-pills" role="tablist">
-                <li role="presentation" class="active"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
-                <li role="presentation"><a href="#Bathrooms" aria-controls="Bathrooms" role="tab" data-toggle="tab">Bathrooms</a></li>
-                <li role="presentation"><a href="#LivingSpaces" aria-controls="LivingSpaces" role="tab" data-toggle="tab">Living Spaces</a></li>
-                <li role="presentation"><a href="#Bedrooms" aria-controls="Bedrooms" role="tab" data-toggle="tab">Bedrooms</a></li>
-                <li role="presentation"><a href="#RecreationalRooms" aria-controls="RecreationalRooms" role="tab" data-toggle="tab">Recreational Rooms</a></li> 
-                <li role="presentation"><a href="#Foyers" aria-controls="Foyers" role="tab" data-toggle="tab">Foyers</a></li>
-              </ul>
-            </div>
-            </div>
+
+      <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="Kitchens">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen6_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Kitchens/Kitchen6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen1_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Kitchens/Kitchen.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen3_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Kitchens/Kitchen3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen7_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Kitchens/Kitchen7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen4_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Kitchens/Kitchen4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen8_large.jpg" data-gallery>
+                       <img class="img-responsive" src="images/Kitchens/Kitchen8.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen2_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Kitchens/Kitchen2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen5_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Kitchens/Kitchen5.jpg" alt="">
+                        </a>
+                    </div>
+                </div> 
+           </div>
+       </div>
+
+        <div role="tabpanel" class="tab-pane" id="Bathrooms">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom1_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bathrooms/Bathroom.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom2_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bathrooms/Bathroom2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom3_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bathrooms/Bathroom3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom4_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bathrooms/Bathroom4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom5_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bathrooms/Bathroom5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom6_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bathrooms/Bathroom6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom7_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bathrooms/Bathroom7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom8_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bathrooms/Bathroom8.jpg" alt="">
+                        </a>
+                    </div>
+                </div> 
+           </div>
         </div>
-    </div>
 
+        <div role="tabpanel" class="tab-pane" id="LivingSpaces">
+            <div class="container">
+                <div class="row">
 
-  <!-- Tab panes -->
-<div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="Kitchens">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen1_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Kitchens/Kitchen.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen2_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Kitchens/Kitchen2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen3_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Kitchens/Kitchen3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen4_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Kitchens/Kitchen4.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen5_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Kitchens/Kitchen5.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen6_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Kitchens/Kitchen6.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen7_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Kitchens/Kitchen7.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Kitchens/kitchen_large/kitchen8_large.jpg" data-gallery>
-                   <img class="img-responsive" src="images/Kitchens/Kitchen8.jpg" alt="">
-                    </a>
-                </div>
-            </div> 
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS1.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS2.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS3.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS4.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS5.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS6.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS7.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS8.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces8.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS9.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces9.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS10.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces10.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS11.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces11.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS12.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces12.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS13.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LS13.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS14.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LS14.jpg" alt="">
+                        </a>
+                    </div>
+                </div> 
+           </div>
        </div>
-   </div>
+       
+       <div role="tabpanel" class="tab-pane" id="Bedrooms">
+            <div class="container">
+                <div class="row">
 
-    <div role="tabpanel" class="tab-pane" id="Bathrooms">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom1_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bathrooms/Bathroom.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom2_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bathrooms/Bathroom2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom3_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bathrooms/Bathroom3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom4_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bathrooms/Bathroom4.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom5_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bathrooms/Bathroom5.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom6_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bathrooms/Bathroom6.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom7_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bathrooms/Bathroom7.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bathrooms/bathroom_large/bathroom8_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bathrooms/Bathroom8.jpg" alt="">
-                    </a>
-                </div>
-            </div> 
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom1_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bedrooms/Bedrooms.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom2_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bedrooms/Bedrooms2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom3_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bedrooms/Bedrooms3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom4_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bedrooms/Bedrooms4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom5_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bedrooms/Bedrooms5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom6_large.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Bedrooms/Bedrooms6.jpg" alt="">
+                        </a>
+                    </div>
+                </div> 
+           </div>
        </div>
-    </div>
 
-    <div role="tabpanel" class="tab-pane" id="LivingSpaces">
-        <div class="container">
-            <div class="row">
+        <div role="tabpanel" class="tab-pane" id="RecreationalRooms">
+            <div class="container">
+                <div class="row">
 
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS1.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS2.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS3.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS4.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces4.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS5.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces5.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS6.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces6.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS7.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces7.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS8.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces8.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS9.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces9.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS10.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces10.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS11.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces11.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS12.jpg" data-gallery>
-                        <img class="img-responsive" src="images/LivingSpaces/LivingSpaces12.jpg" alt="">
-                    </a>
-                </div>
-            </div> 
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/RecreationalRooms/rec_large/R1.jpg" data-gallery>
+                            <img class="img-responsive" src="images/RecreationalRooms/RecreationalRooms.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/RecreationalRooms/rec_large/R2.jpg" data-gallery>
+                            <img class="img-responsive" src="images/RecreationalRooms/RecreationalRooms2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/RecreationalRooms/rec_large/R3.jpg" data-gallery>
+                            <img class="img-responsive" src="images/RecreationalRooms/RecreationalRooms3.jpg" alt="">
+                        </a>
+                    </div>
+                </div> 
+           </div>
        </div>
-   </div>
-   
-   <div role="tabpanel" class="tab-pane" id="Bedrooms">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom1_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bedrooms/Bedrooms.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom2_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bedrooms/Bedrooms2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom3_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bedrooms/Bedrooms3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom4_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bedrooms/Bedrooms4.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom5_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bedrooms/Bedrooms5.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Bedrooms/bedroom_large/bedroom6_large.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Bedrooms/Bedrooms6.jpg" alt="">
-                    </a>
-                </div>
-            </div> 
-       </div>
-   </div>
-
-    <div role="tabpanel" class="tab-pane" id="RecreationalRooms">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/RecreationalRooms/rec_large/R1.jpg" data-gallery>
-                        <img class="img-responsive" src="images/RecreationalRooms/RecreationalRooms.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/RecreationalRooms/rec_large/R2.jpg" data-gallery>
-                        <img class="img-responsive" src="images/RecreationalRooms/RecreationalRooms2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/RecreationalRooms/rec_large/R3.jpg" data-gallery>
-                        <img class="img-responsive" src="images/RecreationalRooms/RecreationalRooms3.jpg" alt="">
-                    </a>
-                </div>
-            </div> 
-       </div>
-   </div>
-   
-    <div role="tabpanel" class="tab-pane" id="Foyers">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Foyers/foyers_large/F1.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Foyers/Foyers.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Foyers/foyers_large/F2.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Foyers/Foyers2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/Foyers/foyers_large/F3.jpg" data-gallery>
-                        <img class="img-responsive" src="images/Foyers/Foyers3.jpg" alt="">
-                    </a>
-                </div>
-            </div> 
-       </div>
-   </div> <!-- end FOYERS -->
-  </div>
-  </section>
+       
+        <div role="tabpanel" class="tab-pane" id="Foyers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Foyers/foyers_large/F0.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Foyers/Foyers0.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Foyers/foyers_large/F1.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Foyers/Foyers.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Foyers/foyers_large/F2.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Foyers/Foyers2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/Foyers/foyers_large/F3.jpg" data-gallery>
+                            <img class="img-responsive" src="images/Foyers/Foyers3.jpg" alt="">
+                        </a>
+                    </div>
+                </div> 
+           </div>
+       </div> <!-- end FOYERS -->
+      </div>
+      </section>
 
     <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
     <div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
@@ -586,30 +616,84 @@
 </div>
 </section>
 
+
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="testimonial-section">
+        <div class="container" style="text-align:center;">
+
+            <p style="color:#1E1936; font-size:20px;">
+            “The total professional with a fresh and talented eye for the unique look, the right look, your look.
+            <br>
+            I have enjoyed working with her immensely.  Ellen is also timely, reliable, and well priced.
+            <br>
+            We love our new home.”
+            <br><br>
+            -Joan M.
+            </p>
+
+            <br><br>
+
+            <p style="color:#1E1936; font-size:20px;">
+            "Relentless in her pursuit to find the very best furnishings, fabrics, and treatments.<br>
+            She helped me to envision the plans and together we came up with the best uses for the spaces provided."<br>
+            <br>
+            “Nothing but the highest praise for the top to bottom design of our new home.”
+            <br><Br>
+            -Louise M.
+            </p>
+
+            <br><br>
+
+            <p style="color:#1E1936; font-size:20px;">
+            “Design Evolution came highly recommended from a close friend.  Due to my very busy work schedule and family commitments, I required a design professional who could inventory my home furnishings including artwork, rugs, lighting, and furniture, projecting which furnishings would work in the space provided... Ellen was easy to work with and very reliable.  I enjoyed and appreciated her creative input and the fact she stayed within budget.  I would recommend Design Evolution without reservation”
+            <br><br>
+            -Deborah L. 
+            </p>
+
+        </div>
+    </section> 
+
+
+        <!-- About Section -->
+    <!-- <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <br>
+                    <h1>About</h1>
+                    <hr>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
-                    <P>Ellen Veith Elia <br> 
-                        Owner: Design Evolution <br>
-                        Phone: 914-738-7707 
+                    <p style="font-size:21px;"> 
+                        <a href="mailto:ellen@designevolution.nyc" style="color: #1E1936;">Ellen@DesignEvolution.nyc</a><br>
+                        914-738-7707 
                     </P>
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
+
 
             <!-- Footer -->
     <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <p>&copy; Design Evolution 2015</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>&copy; Design Evolution 2015</p>
+                </div>
             </div>
         </div>
-    </div>
     </footer>
 
 </div>
