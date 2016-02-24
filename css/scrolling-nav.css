@@ -86,6 +86,13 @@ section#gallery {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+@media(max-width:767px) {
+    #testimonials > .container > p {
+        font-size:16px !important;
+    }
+}
+
 #contact {
     background-color: white;
     color: #1E1936;

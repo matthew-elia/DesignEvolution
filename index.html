@@ -56,23 +56,23 @@
         /*height: 80% !important;
         width: 80% !important;*/
     }
-/*blue 486A83
+/*blue 4B84B8
 red F48C75
 tan F2EAD6
 purp A18083*/
     .navbar {
-        background-color: #486A83;
-        border:2px solid #486A83;
+        background-color: #4B84B8;
+        border:2px solid #4B84B8;
     }
 
-    a.navbar-brand.page-scroll {
+    p.navbar-brand.page-scroll {
         font-size: 42px;
         color: white;
         position: relative;
         bottom: 12px;
     }
 
-    a.navbar-brand.page-scroll:hover {
+    p.navbar-brand.page-scroll:hover {
         color: white;
     }
 
@@ -88,27 +88,27 @@ purp A18083*/
         color:white;
     }
     .navbar-default .navbar-nav>li>a:hover {
-        color: #486A83;
+        color: #4B84B8;
         background-color: #F2EAD6;
     }
     .navbar-default .navbar-nav>.active>a{
         color: white;
-        background-color: #E05332;
+        background-color: tomato;
     } 
     .navbar-default .navbar-nav>.active>a:hover, 
     {
-        color: #E05332;
-        background-color: #486A83;
+        color: tomato;
+        background-color: #4B84B8;
     }
     .navbar-default .navbar-nav>.active>a:focus {
         color: white;
-        background-color: #E05332;
+        background-color: tomato;
     }
 
     #gallery-title > h1 {
         margin:0;
         margin-top:16px;
-        color: #E05332;
+        color: tomato;
         font-size: 64px;
         position: relative;
         top: 2px;   
@@ -144,7 +144,7 @@ purp A18083*/
 
 /*NAV PILLS*/
     .nav-pills>li.active>a, .nav-pills>li>a:hover, .nav-pills>li.active>a:focus {
-      color: #E05332;
+      color: tomato;
       background-color: white;
       border-bottom: 2px solid #1E1936;
       border-radius:0;
@@ -170,7 +170,7 @@ purp A18083*/
     }
 
     @media only screen and (max-width: 772px) {
-        a.navbar-brand.page-scroll {
+        p.navbar-brand.page-scroll {
           font-size: 24px;
           padding-top: 24px;
         }
@@ -181,7 +181,7 @@ purp A18083*/
             height: auto !important;
         }
 
-        a.navbar-brand.page-scroll.shrinktext {
+        p.navbar-brand.page-scroll.shrinktext {
           font-size: 24px !important;
           padding-top: 24px;   
         }
@@ -220,7 +220,7 @@ purp A18083*/
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button> -->
-                <a class="navbar-brand page-scroll" href="#page-top"> <i class="fa fa-home" style="color:#E05332;"></i> Design Evolution</a>
+                <p class="navbar-brand page-scroll" href="#page-top"> <i class="fa fa-home" style="color:#021455;"></i> Design Evolution</p>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -248,45 +248,41 @@ purp A18083*/
     <!-- Intro Section -->
     <header id="myCarousel" class="carousel slide">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
                 <li data-target="#myCarousel" data-slide-to="4"></li>
-            </ol>
+            </ol> -->
 
             <!-- Wrapper for Slides -->
             <div class="carousel-inner">
                 <div class="item active">
                     <!-- Set the first background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('/images/CarouselCloseups/CS.jpg');"></div>
+                    <div class="fill" style="background-image:url('/images/CarouselCloseups/csBgTrump.jpg');"></div>
                 </div>
-                <div class="item">
-                    <!-- Set the second background image using inline CSS below. -->
+                <!-- <div class="item">
                     <div class="fill" style="background-image:url('/images/CarouselCloseups/CS1.jpg');"></div>
                 </div>
                 <div class="item">
-                    <!-- Set the second background image using inline CSS below. -->
                     <div class="fill" style="background-image:url('/images/CarouselCloseups/CS2.jpg');"></div>
                 </div>
                 <div class="item">
-                    <!-- Set the third background image using inline CSS below. -->
                     <div class="fill" style="background-image:url('/images/CarouselCloseups/CS3.jpg');"></div>
                 </div>
                 <div class="item">
-                    <!-- Set the third background image using inline CSS below. -->
                     <div class="fill" style="background-image:url('/images/CarouselCloseups/CS4.jpg');"></div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="icon-prev"></span>
             </a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">
                 <span class="icon-next"></span>
-            </a>
+            </a> -->
     </header>
 
 
@@ -303,9 +299,9 @@ purp A18083*/
                 <div class="row">
                   <!-- Nav tabs -->
                   <ul id="myTabs" class="nav nav-pills" role="tablist">
-                    <li role="presentation" class="active"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
+                    <li role="presentation" class="active"><a href="#LivingSpaces" aria-controls="LivingSpaces" role="tab" data-toggle="tab">Living Spaces</a></li>
+                    <li role="presentation"><a href="#Kitchens" aria-controls="Kitchens" role="tab" data-toggle="tab">Kitchens</a></li>
                     <li role="presentation"><a href="#Bathrooms" aria-controls="Bathrooms" role="tab" data-toggle="tab">Bathrooms</a></li>
-                    <li role="presentation"><a href="#LivingSpaces" aria-controls="LivingSpaces" role="tab" data-toggle="tab">Living Spaces</a></li>
                     <li role="presentation"><a href="#Bedrooms" aria-controls="Bedrooms" role="tab" data-toggle="tab">Bedrooms</a></li>
                     <li role="presentation"><a href="#RecreationalRooms" aria-controls="RecreationalRooms" role="tab" data-toggle="tab">Recreational Rooms</a></li> 
                     <li role="presentation"><a href="#Foyers" aria-controls="Foyers" role="tab" data-toggle="tab">Foyers</a></li>
@@ -318,7 +314,94 @@ purp A18083*/
 
       <!-- Tab panes -->
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="Kitchens">
+        <div role="tabpanel" class="tab-pane active" id="LivingSpaces">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS0.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LS_trump_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS00.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LS_trump_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS1.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS2.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS3.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS4.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS5.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS6.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS7.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS8.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces8.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS9.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces9.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS10.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces10.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS11.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces11.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS12.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces12.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS13.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LS13.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS14.jpg" data-gallery>
+                            <img class="img-responsive" src="images/LivingSpaces/LS14.jpg" alt="">
+                        </a>
+                    </div>
+                </div> 
+           </div>
+       </div>
+        <div role="tabpanel" class="tab-pane" id="Kitchens">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
@@ -413,83 +496,6 @@ purp A18083*/
            </div>
         </div>
 
-        <div role="tabpanel" class="tab-pane" id="LivingSpaces">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS1.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS2.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces2.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS3.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces3.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS4.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces4.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS5.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces5.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS6.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces6.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS7.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces7.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS8.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces8.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS9.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces9.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS10.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces10.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS11.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces11.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS12.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LivingSpaces12.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS13.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LS13.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a class="thumbnail" href="images/LivingSpaces/living_spaces_large/LS14.jpg" data-gallery>
-                            <img class="img-responsive" src="images/LivingSpaces/LS14.jpg" alt="">
-                        </a>
-                    </div>
-                </div> 
-           </div>
-       </div>
        
        <div role="tabpanel" class="tab-pane" id="Bedrooms">
             <div class="container">
